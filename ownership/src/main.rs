@@ -32,7 +32,7 @@ impl<'a> CSVProcessor<'a> {
         }
     
         self.parser.update_cell(2, 3, "Updated Value")?;
-        self.parser.write_csv("updated_data.csv")?;
+        self.parser.write_csv("ownership/updated_data.csv")?;
         self.parser.display_csv()?;
     
         Ok(())
